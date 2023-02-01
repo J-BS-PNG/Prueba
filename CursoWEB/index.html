@@ -2,30 +2,64 @@
 <!--Identar con 2 espacios-->
 <html lang="es">
   <head>
-
+    <title>Aprende Web</title>
   </head>
   <body>
-    <h2>AppDeRegistro</h2>>
+    <h2>AppDeRegistro</h2>
     <main>
       <h3>Imagen principal</h3>
       <!--TODO: crear vista de registro(Con los comentarios explicamos el código)-->
       <p>Deseas <a href="https://extremetechcr.com/tienda/" target="_blank" rel="noopener norederrer">registrarte</a> en nuestra app.</p>
+
+      <div>
+        <p>Cosas para registrarse:</p>
+        <ul>
+          <li>Nombre</li>
+          <li>Apellido</li>
+          <li>Telefono</li>
+        </ul>
+
+        <p>Cosas para no registrarse:</p>
+        
+        <ol>
+          <li>Fotos</li>
+          <li>Ubicacion</li>
+        </ol>
+      </div>
+
       <!--Siempre incluir alt a las imagenes  -->
       <img src="https://www.processmaker.com/wp-content/uploads/2021/03/document-vs-records-management.jpg" alt="Un ejemplo de registro">
 
       <form a   ction="/enviar-respuesta">
+        <!--Atributo checked es para marcar una opcion por defecto en input-->
+        <!--Atributo name en radio si es igual marcara uno pero el otro no, pero en checklist no afecta mucho-->
+
         <!--Botones de radio-->
-        <label for="interior"><input id="interior" type="radio" name="interior-exterior">Interior</label>
+        <label for="interior">
+          <input id="interior" type="radio" value="interior" name="interior-exterior">Interior
+        </label>
 
         <br>
 
-        <label for="exterior"><input id="exterior" type="radio" name="interior-exterior">Exterior</label>
+        <label for="exterior">
+          <input id="exterior" type="radio" value="exterior" name="interior-exterior" checked>Exterior
+        </label>
 
         <br>
         <!--Casillas de Verificado-->
-        <input type="checkbox">Nacional
-        <input type="checkbox">Internacional
-        <input type="checkbox">Otro
+        <label for="nacional">
+          <input id="nacional" type="checkbox" value="nacional" name="nacionalidad">Nacional
+        </label>
+        <br>
+        <label for="internacional">
+          <input id="internacional" type="checkbox" value="internacional" name="nacionalidad" checked>Internacional
+        </label>
+        <br>
+        <label for="otro">
+          <input id="otro" type="checkbox" value="otro" name="nacionalidad">Otro
+        </label>
+
+        <br>
 
         <!--Botones de enviar-->
         <input type="text" placeholder="Nombre" required>
@@ -35,5 +69,8 @@
         <button type="submit">Enviar</button>
       </form>
     </main>
+    <footer>
+      <p><small> Derechos de Autor.</small></p>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+</head>
+<body>
+  <main>
+    <p><h1>Registro de estudiante</h1></p>
+    <div id="informacion">
+      <form action="/enviar-respuesta">
+        <label>Nombre</label><input type="text" id="nombre">
+        <br>
+        <label>Apellido</label><input type="text" id="apellido">
+        <label>Segundo Apellido</label><input type="text" id="sApellido">
+        <br>
+        <label>Fecha de nacimiento</label><input type="date" id="fNacimiento">
+        
+        <br>
+        <label>Universidad</label>
+        <select name="uni" id="uni">
+          <option>TEC</option>
+          <option>UCR</option>
+          <option>UNA</option>
+        </select>
+
+        <br>
+        <label>Imagen</label><input type="file" id="perfil">
+
+        <br>
+        <button>Registrar</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>Derechos reservados al autor.</footer>
+</body>
+</html>
